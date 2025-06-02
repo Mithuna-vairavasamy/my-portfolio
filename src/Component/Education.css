@@ -1,0 +1,216 @@
+.education-section {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+.education-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #00ffe7;
+  box-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+  z-index: 0;
+}
+
+.timeline-block {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+.timeline-block.left .timeline-year {
+  left: calc(50% - 90px);
+  top: 45%;
+}
+
+.timeline-block.right .timeline-year {
+  left: calc(50% + 50px);
+  top: 45%;
+}
+
+.timeline-year {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #00ffe7;
+  z-index: 2;
+  position: absolute;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background-color: #00ffe7;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+  z-index: 3;
+}
+
+.timeline-box {
+  background-color: #111;
+  border: 2px solid #00ffe7;
+  border-radius: 50px;
+  padding: 20px 30px;
+  width: 40%;
+  box-shadow: 0 0 15px #00ffe7, 0 0 25px #00ffe7;
+  z-index: 1;
+  transition: transform 0.3s;
+  margin-top: 40px; /* Creates space below the year */
+}
+
+.timeline-box:hover {
+  transform: scale(1.03);
+}
+
+.timeline-box h3 {
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.timeline-box p {
+  margin: 0;
+  color: #cccccc;
+}
+
+.timeline-block.left .timeline-box {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.timeline-block.right .timeline-box {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  /* Timeline adjustments you already have */
+  .timeline-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .timeline-year {
+    position: static;
+    transform: none;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+
+  .timeline-box {
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .timeline-dot {
+    display: none;
+  }
+
+  .timeline-line {
+    left: 20px;
+  }
+
+  /* NEW: Responsive adjustments for name heading and back button */
+
+  .name-heading {
+    position: static;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    padding: 0 10px;
+  }
+
+  .back-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+    padding: 4px 8px;
+    z-index: 9999; /* keep it above everything */
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+  }
+}
+
+
+.education-section {
+  position: relative;
+  padding: 40px 20px 20px 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+.name-heading {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+  letter-spacing: 1.2px;
+  
+}
+
+
+.white-text {
+  color: white;
+}
+
+.highlight-text {
+  color: #64ffda;
+  text-shadow: 0 0 3px #64ffda, 0 0 11px #00fff7;
+}
+
+.education-section {
+  position: relative; /* Make sure container is relative for absolute positioning inside */
+  padding: 40px 20px 20px 20px;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #64ffda;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #00fff7;
+}
+
+
